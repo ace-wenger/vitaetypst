@@ -1,19 +1,21 @@
-Package: typstcv
+Package: vitaetypst
 Type: Package
-Title: CV for Quarto & Typst
-Version: 0.0.2.4
+Title: Data-Driven CVs for Quarto
+Version: 0.0.0.9000
 Authors@R: 
-    person(given = "Kazuharu",
-           family = "Yanagimoto",
-           email = "kazuharu.yanagimoto@gmail.com",
+    person(given = "Aaron",
+           family = "Wenger",
+           email = "aaron.wenger@protonmail.com",
            role = c("aut", "cre"),
-           comment = c(ORCID = "0009-0007-1967-8304"))
-Description:Provides functions to create a entry of CV for Quarto & Typst.
+           comment = c(ORCID = ""))
+Description: Provides templates and functions to quickly create long CVs
+    (curriculum vitae), short resumes', and accessory application documents
+    in a clean and consistent style. Inspired by the `vitae` package for 
+    `Rmarkdown` via LaTeX, but for Quarto via Typst.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-URL: https://github.com/kazuyanagimoto/typstcv,
-    https://kazuyanagimoto/typstcv/
+URL:
 Depends: 
     R (>= 4.1)
 Roxygen: list(markdown = TRUE)
