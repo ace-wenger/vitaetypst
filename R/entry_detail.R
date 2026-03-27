@@ -1,47 +1,27 @@
-#' Convert a data frame to a resume entry
+#' Convert a data frame to a detailed resume entry
 #'
-#' @param data A data frame with columns for title, location, date, and description
-#' @param title The column name for the title. Default is "title"
-#' @param location The column name for the location. Default is "location"
-#' @param date The column name for the date. Default is "date"
-#' @param description The column name for the description. Default is "description"
-#' @param details The column name for additional details. Default is NULL
+#' @param data A data frame with five or six columns, each providing different information about the entry (row)
+#' @param what The column name providing the name of the detailed entry (e.g., position title, degree)
+#' @param with The column name providing the organization (e.g., company, university)
+#' @param when The column name providing the date range
+#' @param where The column name providing the geographic location or address
+#' @param description The column name providing a brief description, which is the first bullet point
+#' @param details Optional, the column name providing one or more details as a named list
 #'
-#' @return A string with the resume entry
+#' @return A typst string calling the `#entry_detailed` typst function
 #' @export
 #'
 #' @examples
-#' educ <- data.frame(
-#'  title = c("Ph.D. in Physics", "Master of Science"),
-#'  location = c("Zürich, Switzerland", "Zürich, Switzerland"),
-#'  date = c("1905", "1896 - 1900"),
-#'  description = c("University of Zürich", "ETH")
-#' )
-#'
-#' resume_entry(educ)
-#'
-#' # With details
-#' award <- data.frame(
-#'  title = c("Nobel Prize in Physics"),
-#'  location = c("Stockholm, Sweden"),
-#'  date = c("1921"),
-#'  description = c("For his services to"),
-#'  detail1 = c("Theoretical Physics"),
-#'  detail2 = c("Discovery of the law of the photoelectric effect")
-#' )
-#'
-#' resume_entry(award, details = c("detail1", "detail2"))
-#'
-resume_entry <- function(
-  data,
-  title = "title",
-  location = "location",
-  date = "date",
-  description = "description",
-  details = NULL
-) {
+entry_detailed <- function(
+    data,
+    what = "what",
+    with = "with",
+    when = "when",
+    where = "where",
+    description = "description",
+    details = "detail") {
   strings <- apply(data, 1, function(row) {
-    s <- "#resume-entry("
+    s <- "#entry_detailed("
     if (!is.na(row[title])) {
       s <- sprintf("%stitle: [%s],", s, row[title])
     }
