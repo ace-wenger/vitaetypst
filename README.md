@@ -1,5 +1,7 @@
 
 
+<!-- Remember to edit README.qmd, not README.md -->
+
 # vitaetypst <!-- add in graphic for package -->
 
 <!-- badges: start -->
@@ -17,7 +19,7 @@ Quarto extension and
 [typstcv](https://github.com/kazuyanagimoto/typstcv) R package.
 
 - **Data-driven**: Most CV contents are stored and manipulated as data
-  objects, facilitating their reuse and continuous updating
+  objects, facilitating their reuse and continuous updating.
 - **Reproducible**: CVs are easily updated with new formatting and/or
   contents, requiring a one-time investment of effort.
 - **Flexible**: Useful templates and options resolve most needs, Quarto
@@ -33,7 +35,7 @@ Quarto extension and
 This package is under active development. Check back soon!
 
 - [ ] 0.1.0, initial release with *awesome-cv*
-  - [ ] have a working minimal example of an academic CV in the classic
+  - [x] have a working minimal example of an academic CV in the classic
     *awesome-cv* style
   - [ ] modify functions to better support the classic *awesome-cv*
     style

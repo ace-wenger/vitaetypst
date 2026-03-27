@@ -27,7 +27,7 @@ This package is under active development.
 Check back soon!
 
 - [ ] 0.1.0, initial release with *awesome-cv*
-  - [ ] have a working minimal example of an academic CV in the classic *awesome-cv* style
+  - [x] have a working minimal example of an academic CV in the classic *awesome-cv* style
   - [ ] modify functions to better support the classic *awesome-cv* style
     - [ ] `entry_detailed()` for experiences, education, etc.
     - [ ] `entry_list()` for grants, awards, service, etc.
