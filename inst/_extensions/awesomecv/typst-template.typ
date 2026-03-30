@@ -1,5 +1,5 @@
 #import "@preview/fontawesome:0.6.0": *
-#import "entry_detailed.typ":
+#import "_extensions/awesomecv/entry_detailed.typ": *
 
 //------------------------------------------------------------------------------
 // Style
@@ -310,7 +310,6 @@
   body
 }
 
-//#let resume-entry(
 //  title: none,
 //  location: "",
 //  date: "",
