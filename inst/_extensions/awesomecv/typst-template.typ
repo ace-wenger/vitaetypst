@@ -1,4 +1,5 @@
 #import "@preview/fontawesome:0.6.0": *
+#import "entry_detailed.typ":
 
 //------------------------------------------------------------------------------
 // Style
@@ -309,17 +310,17 @@
   body
 }
 
-#let resume-entry(
-  title: none,
-  location: "",
-  date: "",
-  description: "",
-) = {
-  pad[
-    #justified-header(title, location)
-    #secondary-justified-header(description, date)
-  ]
-}
+//#let resume-entry(
+//  title: none,
+//  location: "",
+//  date: "",
+//  description: "",
+//) = {
+//  pad[
+//    #justified-header(title, location)
+//    #secondary-justified-header(description, date)
+//  ]
+//}
 
 //------------------------------------------------------------------------------
 // Resume Template

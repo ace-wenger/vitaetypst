@@ -2,4 +2,4 @@
 
 export(format_date)
 export(install_awesomecv)
-export(resume_entry)
+export(entry_detailed)
